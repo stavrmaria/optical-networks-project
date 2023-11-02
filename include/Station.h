@@ -24,6 +24,11 @@ class Station {
         std::string getName();
         std::vector<Packet> getBufferPackets();
         int getWavelength();
+
+        bool isEmpty();
+        bool isFull();
+        bool addPacket(Packet);
+        void removeOldestPacket();
 };
 
 #endif

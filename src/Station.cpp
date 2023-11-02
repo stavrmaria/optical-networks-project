@@ -34,3 +34,23 @@ std::vector<Packet> Station::getBufferPackets() {
 int Station::getWavelength() {
     return this->wavelength;
 }
+
+bool Station::isEmpty() {
+    return this->bufferPackets.size() == 0;
+}
+
+bool Station::isFull() {
+    return this->bufferPackets.size() == BUFFER_CAPACITY;
+}
+
+bool Station::addPacket(Packet _packet) {
+    if (this->isFull())
+        return false;
+    
+    this->bufferPackets.push_back(_packet);
+    return true;
+}
+
+void Station::removeOldestPacket() {
+    this->bufferPackets.erase(this->bufferPackets.begin());
+}
