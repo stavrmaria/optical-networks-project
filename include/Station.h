@@ -25,10 +25,11 @@ class Station {
         std::vector<Packet> getBufferPackets();
         int getWavelength();
 
+        // Queue management methods
         bool isEmpty();
         bool isFull();
         bool addPacket(Packet);
-        void removeOldestPacket();
+        Packet removeOldestPacket();
 };
 
 #endif

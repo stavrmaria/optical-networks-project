@@ -35,14 +35,17 @@ int Station::getWavelength() {
     return this->wavelength;
 }
 
+// Check if the buffer is empty
 bool Station::isEmpty() {
     return this->bufferPackets.size() == 0;
 }
 
+// Check if the buffer is full
 bool Station::isFull() {
     return this->bufferPackets.size() == BUFFER_CAPACITY;
 }
 
+// Add a packet to the buffer
 bool Station::addPacket(Packet _packet) {
     if (this->isFull())
         return false;
@@ -51,6 +54,9 @@ bool Station::addPacket(Packet _packet) {
     return true;
 }
 
-void Station::removeOldestPacket() {
+// Remove and return the oldest packet from the buffer
+Packet Station::removeOldestPacket() {
+    Packet oldestPacket = this->bufferPackets[0];
     this->bufferPackets.erase(this->bufferPackets.begin());
+    return oldestPacket;
 }
