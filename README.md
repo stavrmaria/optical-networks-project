@@ -3,7 +3,7 @@
 ## Project Description
 In an optical network, eight computers use four different wavelengths (λ1 – λ4) to transmit packets to a server. Computers C1 and C2 transmit using wavelength λ1, computers C3 and C4 use λ2, and so on. The connection between the server and computers is established through combiners and a Wavelength Division Multiplexer (WDM multiplexer), as illustrated in the diagram.
 
-![Topology](opt-net.png)
+<img src="opt-net.png" alt="network topology" width="400"/>
 
 ### Transmission occurs as follows:
 - Time is divided into slots, each with a duration equal to the packet transmission time.
