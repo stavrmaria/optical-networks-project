@@ -21,12 +21,12 @@ void updateWavelengths(std::unordered_map<int, int>& wavelengths, int wavelength
 }
 
 int main(int argc, char** argv) {
-    Station *stations[NO_STATIONS];
-    float arrivalProp = 2;
-    unsigned int totalPacketsSent = 0;
-    unsigned int totalPacketsLost = 0;
-    unsigned int totalPacketsCreated = 0;
-    float totalDelay = 0;
+    Station *stations[NO_STATIONS];         // Stations array 
+    float arrivalProp = 2;                  // Arrival propability of packet into buffer
+    unsigned int totalPacketsSent = 0;      // Number of packets sent to the server
+    unsigned int totalPacketsLost = 0;      // Number of packets not added into the buffer
+    unsigned int totalPacketsCreated = 0;   // Number of packets created to be added into the buffer
+    float totalDelay = 0;                   // Total delay of the transmittion of the packets
 
     // Seed the random number generator
     std::srand(static_cast<unsigned>(std::time(nullptr)));
@@ -45,6 +45,7 @@ int main(int argc, char** argv) {
     
     std::cout << "==> Starting the transmissions..." << std::endl;
     for (int slot = 0; slot < NO_SLOTS; slot++) {
+        // Save the used wavelengths in <wavelength, stationCount> pairs to check for collisions 
         std::unordered_map<int, int> usedWavelengths;
 
         for (int i = 0; i < NO_STATIONS; i++) {
