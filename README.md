@@ -25,6 +25,25 @@ In an optical network, eight computers use four different wavelengths (λ1 – �
     - Calculate the packet loss rate in the network.
     - Construct a graph with the horizontal axis representing the probability ***p*** and the vertical axis representing the packet loss rate
 
+## Calculations & Graphs
+- **Propability - Average Delay Graph**
+$$ Average Delay = \frac{Total Delay}{Total Packets Sent} $$ 
+<center>
+<img src="https://quicklatex.com/cache3/06/ql_c5b7539a7159e14a09920d6c671d4f06_l3.png" alt="propability - average delay graph" width="350"/>
+</center>
+
+- **Propability - Throughput Graph**
+$$ Throughput = \frac{Total Packets Sent}{No. Slots} $$
+<center>
+<img src="https://quicklatex.com/cache3/37/ql_0660c2e56cb54abec1407362b6f3b037_l3.png" alt="propability - throughput" width="350"/>
+</center>
+
+- **Propability - Packet Loss Rate Graph**
+$$ Packet Loss Rate = \frac{Total Packets Lost}{Total Packets Created} $$
+<center>
+<img src="https://quicklatex.com/cache3/be/ql_124e5f170949e8f9ff16400c3ef9cebe_l3.png" alt="propability - packet loss rate" width="350"/>
+</center>
+
 ### Usage
 1. Clone the GitHub repository:
 ```
