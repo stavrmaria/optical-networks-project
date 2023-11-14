@@ -50,7 +50,7 @@ Packet Loss Rate = \frac{Total Packets Lost}{Total Packets Created}
 <img src="https://quicklatex.com/cache3/be/ql_124e5f170949e8f9ff16400c3ef9cebe_l3.png" alt="propability - packet loss rate" width="350"/>
 </p>
 
-### Usage
+## Usage
 1. Clone the GitHub repository:
 ```
 git clone https://github.com/stavrmaria/optical-networks-project.git
