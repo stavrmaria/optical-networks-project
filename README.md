@@ -55,15 +55,18 @@ Packet Loss Rate = \frac{Total Packets Lost}{Total Packets Created}
 ```
 git clone https://github.com/stavrmaria/optical-networks-project.git
 ```
+
 2. Navigate to the project directory:
 ```
 cd optical-networks-project
 ```
+
 3. Open a terminal and run `make`:
 ```
 make
 ```
-This will execute the commands specified in the Makefile to build the project.
+This will execute the commands specified in the Makefile to build the project. 
+
 4. Execute the binary file:
 ```
 ./optnet
