@@ -4,7 +4,7 @@
 In an optical network, eight computers use four different wavelengths (λ1 – λ4) to transmit packets to a server. Computers C1 and C2 transmit using wavelength λ1, computers C3 and C4 use λ2, and so on. The connection between the server and computers is established through combiners and a Wavelength Division Multiplexer (WDM multiplexer), as illustrated in the diagram.
 
 <p align="center">
-<img src="opt-net.png" alt="network topology" width="400"/>
+<img src="images/opt-net.png" alt="network topology" width="400"/>
 </p>
 
 ### Transmission occurs as follows:
@@ -30,24 +30,27 @@ In an optical network, eight computers use four different wavelengths (λ1 – �
 ```math
 Average Delay = \frac{Total Delay}{Total Packets Sent}
 ```
+
 <p align="center">
-<img src="https://quicklatex.com/cache3/06/ql_c5b7539a7159e14a09920d6c671d4f06_l3.png" alt="propability - average delay graph" width="350"/>
+<img src="images/average-delay.png" alt="propability - average delay graph" width="400"/>
 </p>
 
 - **Propability - Throughput Graph**
 ```math
 Throughput = \frac{Total Packets Sent}{No. Slots}
 ```
+
 <p align="center">
-<img src="https://quicklatex.com/cache3/37/ql_0660c2e56cb54abec1407362b6f3b037_l3.png" alt="propability - throughput" width="350"/>
+<img src="images/throughtput.png" alt="propability - throughput graph" width="400"/>
 </p>
 
 - **Propability - Packet Loss Rate Graph**
 ```math
 Packet Loss Rate = \frac{Total Packets Lost}{Total Packets Created}
 ```
+
 <p align="center">
-<img src="https://quicklatex.com/cache3/be/ql_124e5f170949e8f9ff16400c3ef9cebe_l3.png" alt="propability - packet loss rate" width="350"/>
+<img src="images/packet-loss-rate.png" alt="propability - packet loss rate graph" width="400"/>
 </p>
 
 ## Usage
@@ -59,11 +62,11 @@ git clone https://github.com/stavrmaria/optical-networks-project.git
 ```
 cd optical-networks-project
 ```
-3. Open a terminal and run `make`:
+3. Open a terminal and run `make` to build the project:
+
 ```
 make
 ```
-This will execute the commands specified in the Makefile to build the project.
 4. Execute the binary file:
 ```
 ./optnet
